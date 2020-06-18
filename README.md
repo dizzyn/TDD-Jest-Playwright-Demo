@@ -20,6 +20,6 @@ It works fine. Lets overview the goals:
 2. The feature file syntax called `Gherkin` is fully supported. I have configured single tag `@excluded` to skip some features/steps and tried _outline data tables_. There are three packages that helps us to integrate `Jest` with `Cucumber` (the BDD Runner) - the famous one [jest-cucumber](https://github.com/bencompton/jest-cucumber) (261 stars for now:grin:), [gherkin-jest](https://github.com/sjmeverett/gherkin-jest) (34:star:) and [jest-cucumber-fusion](https://github.com/b-yond-infinite-network/jest-cucumber-fusion) with 3 :star: (one from me). The last one looked most simple. It allows to use _feature files_ with minimal effort. So I have used that without any trouble at all.
 3. Yes, it works in parallell according _Jest settings_. It can't of course split `outline feature files` loops into threads or the `scenarios` from a `single feature file` (pitty).
 
-Thank you and have ani ce testing
+Have nice testing
 
 Tom
