@@ -1,0 +1,32 @@
+<html>
+  <body>
+    <style>
+      body {
+        background: black;
+        color: white;
+      }
+    </style>
+    <input id="input" />
+    <button onclick="onSubmit('snake')" data-testid="btn-snake">
+      SnakeCase
+    </button>
+    <button onclick="onSubmit('camel')" data-testid="btn-camel">CamelCase</button>
+  
+    <pre id="output"></pre>
+
+    <script>
+      const input = document.querySelector("#input");
+      const output = document.querySelector("#output");
+
+      function onSubmit(caseName) {
+        fetch("/api?str=" + (input.value || "") + "&case=" + caseName).then(
+          (res) => {
+            res.text().then((text) => {
+              output.innerHTML = text;
+            });
+          }
+        );
+      }
+    </script>
+  </body>
+</html>
