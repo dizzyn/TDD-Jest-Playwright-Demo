@@ -1,17 +1,19 @@
 <html>
-  <body>
+  <head>
+    <title>Case Converter</title>
     <style>
       body {
         background: black;
         color: white;
       }
     </style>
+  </head>
+  <body>
     <input id="input" />
-    <button onclick="onSubmit('snake')" data-testid="btn-snake">
+    <button onclick="onSubmit('snake')">
       SnakeCase
     </button>
-    <button onclick="onSubmit('camel')" data-testid="btn-camel">CamelCase</button>
-  
+    <button onclick="onSubmit('camel')">CamelCase</button>
     <pre id="output"></pre>
 
     <script>
