@@ -16,7 +16,7 @@ When(
 );
 
 Then(/^the output '(.*)' is shown in the page$/, async (output) => {
-  expect(await model.getOuput()).toEqual(output);
+  expect(await model.getOutput()).toEqual(output);
 });
 
 Fusion("convert-cases-outline.feature");
