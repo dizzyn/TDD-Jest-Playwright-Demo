@@ -14,7 +14,7 @@ const createHomepageModel = async (page: Page) => {
     clickButton: async (label: string) => {
       await page.click(`//button[contains(., '${label}')]`);
     },
-    getOuput: async () => {
+    getOutput: async () => {
       return await page.textContent("#output");
     },
   };
